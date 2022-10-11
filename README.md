@@ -1,9 +1,9 @@
 
 - 👋 Hi, I’m @goodnewsike
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👀 I’m interested in Frontend Engineering
+- 🌱 I’m currently learning Next.js and Typescript
+- 💞️ I’m looking to collaborate on LinkedIn, Design tools like Figma, Slack, Medium, Twitter and other developer communities.
+- 📫 How to reach me: goodnewsike19@gmail.com
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
