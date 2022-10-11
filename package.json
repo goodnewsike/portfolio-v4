@@ -1,0 +1,55 @@
+{
+  "name": "goodnewsike",
+  "homepage": "/",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.1",
+    "classnames": "^2.3.2",
+    "formsy-react": "^2.2.7",
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
+    "sass": "^1.55.0",
+    "typescript": "4.8.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "warn",
+        {
+          "endOfLine": "auto",
+          "bracketSpacing": false,
+          "jsxBracketSameLine": true,
+          "singleQuote": true,
+          "trailingComma": "all",
+          "tabWidth": 3,
+          "printWidth": 120
+        }
+      ]
+    }
+  }
+}

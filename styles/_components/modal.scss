@@ -1,0 +1,43 @@
+
+.fullScreenModal {
+   position: fixed;
+   z-index: 1250;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   top: 0;
+
+   .fullScreenModal__BackDrop {
+      background: $color-7;
+      backdrop-filter: blur(15px);
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+   }
+   .fullScreenModal__Contents {
+      height: fit-content;
+      max-height: 90vh;
+      width: fit-content;
+      max-width: 90vw;
+      overflow-y: scroll;
+      border-radius: 8px;
+      border: 1px solid $color-6;
+      animation: $fade1;
+
+      &::-webkit-scrollbar {
+         width: 6px; /* Safari and Chrome */
+         height: 0; /* Safari and Chrome */
+      }
+      &::-webkit-scrollbar-track {
+         background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+         position: absolute;
+         background-color: $color-6;
+         border-radius: 8px;
+      }
+   }
+}

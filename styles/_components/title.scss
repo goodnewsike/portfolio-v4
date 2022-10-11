@@ -1,0 +1,29 @@
+.section__title {
+   position: relative;
+   display: inline-flex;
+   // margin-bottom: 5rem;
+   &::before {
+      content: '';
+      position: absolute;
+      left: calc(100% + 1rem);
+      top: 60%;
+      width: 7rem;
+      height: 3px;
+      background: $color-5;
+      transition: $trans;
+   }
+   h2 {
+      text-transform: capitalize;
+   }
+   .title {
+      position: absolute;
+      top: calc(100% - .3rem);
+      left: 3rem;
+      text-transform: capitalize;
+      font-weight: 900;
+      line-height: .7;
+      letter-spacing: .35rem;
+      color: $color-5;
+      opacity: .1;
+   }
+}

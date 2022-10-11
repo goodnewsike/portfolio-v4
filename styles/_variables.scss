@@ -1,0 +1,27 @@
+$trans: .3s ease-in;
+
+$white: #ffffff;
+$black: #000000;
+
+$color-1: #0B0C10;
+$color-11: #060709;
+$color-2: #1F2833;
+$color-3: #C5C6C7;
+$color-4: #66FCF1;
+$color-5: #45A29E;
+$color-6: rgba(255, 255, 255, 0.1);
+$color-7: rgba(9, 20, 40, 0.74);
+$color-8: rgba(9, 20, 40, 1);
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      margin-top: 20px;
+   }
+
+   to {
+      opacity: 1;
+      margin-top: 0;
+   }
+}
+$fade1: fadeIn .25s ease-in;
