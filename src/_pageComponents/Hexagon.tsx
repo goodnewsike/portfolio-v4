@@ -1,12 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { memo, useEffect } from 'react';
 
-const Hexagon = () => {
+// eslint-disable-next-line react/display-name
+const Hexagon = memo(() => {
    useEffect(() => {
-         const cursor: HTMLElement = document.querySelector(".cursor")!;
-         document.addEventListener('mousemove', (e) => {
-            cursor.style.left = `${e.pageX}px`;
-            cursor.style.top = `${e.pageY}px`;
-         });
+      const cursor: HTMLElement = document.querySelector(".cursor")!;
+      const cursorChange: HTMLElement = document.querySelector(".mouse__handle")!;
+      document.addEventListener('mousemove', (e) => {
+         // cursor.style.top = `${e.pageY}px`;
+         // cursor.style.setProperty('--top', `${e.pageY}px`);
+         cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
+         // cursorChange.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
+      });
+      document.addEventListener('onclick', (e) => {
+         cursorChange.classList.add('expand');
+         setTimeout(() => {
+            cursorChange.classList.remove('expand');
+         }, 500);
+      });
    }, []);
 
    return (
@@ -495,7 +505,7 @@ const Hexagon = () => {
             </div>
          </div>
       </div>
-   )
-}
+   );
+});
 
-export default Hexagon
+export default Hexagon;

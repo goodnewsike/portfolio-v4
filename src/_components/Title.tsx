@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title } from '../model';
+import { Title } from '../../model';
 
 const Title = ({title}: Title) => {
    return (

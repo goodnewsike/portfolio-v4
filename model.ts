@@ -6,6 +6,13 @@ import {
    useState,
 } from 'react';
 
+export interface PageLayoutProps {
+   open?: boolean;
+   className: string;
+   children?: any;
+   onClickAway?: any;
+}
+
 export interface NavMap {
    id: number;
    srOnly: string;

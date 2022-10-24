@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { memo } from 'react';
 import classNames from 'classnames';
 import { FiExternalLink } from 'react-icons/fi';
-import { forAccordion } from '../model';
+import { forAccordion } from '../../model';
 
-const Accordion = ({key, data, activeState, setActiveState}: forAccordion) => {
+// eslint-disable-next-line react/display-name
+const Accordion = memo(({ key, data, activeState, setActiveState }: forAccordion) => {
    return (
-      <div key={key} className={classNames("__accordion mb-4", {show: data.role === activeState})}>
-         <div onClick={() => setActiveState(data.role)} className={classNames("accordion__header px-4", {active: data.role === activeState})}>
+      <div key={key} className={classNames("__accordion mb-4", { show: data.role === activeState })}>
+         <div onClick={() => setActiveState(data.role)} className={classNames("accordion__header px-4", { active: data.role === activeState })}>
             <h5 className="title">{data.title}</h5>
             <div className="toggleBtn"></div>
          </div>
@@ -39,7 +40,7 @@ const Accordion = ({key, data, activeState, setActiveState}: forAccordion) => {
             </div>
          </div>
       </div>
-   )
-}
+   );
+});
 
 export default Accordion;

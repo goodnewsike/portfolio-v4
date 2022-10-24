@@ -6,13 +6,14 @@ import '../styles/index.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle.min.js') : null;
   }, []);
 
   if (process.env.NODE_ENV !== 'development') {
     console.log = () => {};
   }
+
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default MyApp;

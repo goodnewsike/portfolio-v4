@@ -7,7 +7,7 @@
    left: 0;
    top: 0;
 
-   .fullScreenModal__BackDrop {
+   .fullScreenModal__Backdrop {
       background: $color-7;
       backdrop-filter: blur(15px);
       position: absolute;
@@ -17,6 +17,7 @@
       left: 0;
       top: 0;
    }
+
    .fullScreenModal__Contents {
       height: fit-content;
       max-height: 90vh;

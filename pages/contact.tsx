@@ -1,16 +1,11 @@
-import React from 'react';
-import classNames from 'classnames';
-import { Accordion, Title } from '../_components';
+import type { NextPage } from 'next';
+import React, { memo } from 'react';
+import { PageLayout, Title } from '../src/_components';
 
-interface Props {
-   activeSection: number | null;
-}
-
-const Contact = ({activeSection}: Props) => {
+// eslint-disable-next-line react/display-name
+const Contact: NextPage = memo(() => {
    return (
-      <section className={classNames("main__contents contact position-relative", {
-         'd-none': activeSection !== 4, 'd-flex': activeSection === 4
-      })}>
+      <PageLayout className="contact position-relative">
          <div className="container p-0">
             <Title title="contact" />
             {/* <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="goodnews-ike" data-version="v1">
@@ -19,8 +14,8 @@ const Contact = ({activeSection}: Props) => {
                </a>
             </div> */}
          </div>
-      </section>
-   )
-}
+      </PageLayout>
+   );
+});
 
-export default Contact
+export default Contact;

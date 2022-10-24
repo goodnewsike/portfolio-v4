@@ -1,16 +1,16 @@
-@import 'variables';
+@import '../src/scss/variables';
 
-@import 'wrapper';
+@import '../src/scss/wrapper';
 
-@import '_components/hexagon';
-@import '_components/modal';
-@import '_components/title';
-@import '_components/accordion';
+@import '../src/scss/_components/pageLayout';
+@import '../src/scss/_components/navbar';
+@import '../src/scss/_components/hexagon';
+@import '../src/scss/_components/modal';
+@import '../src/scss/_components/title';
+@import '../src/scss/_components/accordion';
 
-@import '_sections/main';
-@import '_sections/hero';
-@import '_sections/screen__modal';
-@import '_sections/expertise';
-@import '_sections/work';
-@import '_sections/experience';
-@import '_sections/contact';
+@import '../src/scss/_pages/hero';
+@import '../src/scss/_pages/about';
+@import '../src/scss/_pages/work';
+@import '../src/scss/_pages/experience';
+@import '../src/scss/_pages/contact';

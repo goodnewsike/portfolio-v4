@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub, FaTwitterSquare, FaInstagram } from 'react-icons/
 import { MdOutlineWorkOutline, MdOutlineContactPage } from 'react-icons/md';
 import { BsBagCheck } from 'react-icons/bs';
 import { HiOutlineBadgeCheck } from 'react-icons/hi';
-import { Accordions } from '../model';
+import { Accordions } from '../../model';
 
 export const socialHandles = [
    {id: 1, srOnly: 'LinkedIn', link: 'https://linkedin.com/in/goodnews-ike', icon: <FaLinkedin className="social__icon" />},
@@ -12,11 +12,11 @@ export const socialHandles = [
 ];
 
 export const menuDrop = [
-   // { id: 1, label: 'home', active: 1},
-   { id: 1, label: 'expertise', active: 1, icon: <MdOutlineWorkOutline className="home__icon" />},
-   { id: 2, label: 'work', active: 2, icon: <BsBagCheck className="home__icon" />},
-   { id: 3, label: 'experience', active: 3, icon: <HiOutlineBadgeCheck className="home__icon" />},
-   { id: 4, label: 'contact', active: 4, icon: <MdOutlineContactPage className="home__icon" />},
+   { id: 1, label: 'home', active: 1, icon: <MdOutlineWorkOutline className="home__icon" />},
+   { id: 2, label: 'expertise', active: 2, icon: <MdOutlineWorkOutline className="home__icon" />},
+   { id: 3, label: 'work', active: 3, icon: <BsBagCheck className="home__icon" />},
+   { id: 4, label: 'experience', active: 4, icon: <HiOutlineBadgeCheck className="home__icon" />},
+   { id: 5, label: 'contact', active: 5, icon: <MdOutlineContactPage className="home__icon" />},
 ];
 
 export const experiences = [

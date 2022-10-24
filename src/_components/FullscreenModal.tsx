@@ -1,7 +1,6 @@
-import React, {memo} from 'react';
+import React, {memo, useEffect} from 'react';
 import classNames from 'classnames';
 import {createPortal} from 'react-dom';
-// import './index.scss';
 
 interface Props {
    open: boolean;
@@ -15,7 +14,7 @@ const FullscreenModal = memo((props: Props) => {
    return props.open
    ? createPortal(
          <div className="fullScreenModal d-flex align-items-center justify-content-center">
-            <div onClick={props.onClickAway} className="fullScreenModal__BackDrop" />
+         <div onClick={props.onClickAway} className="fullScreenModal__Backdrop" />
             <div className={classNames('fullScreenModal__Contents p-4 position-relative', props.className)}>{props.children}</div>
          </div>,
          document.body,
