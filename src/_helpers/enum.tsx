@@ -1,22 +1,54 @@
-import { FaLinkedin, FaGithub, FaTwitterSquare, FaInstagram } from 'react-icons/fa';
-import { MdOutlineWorkOutline, MdOutlineContactPage } from 'react-icons/md';
-import { BsBagCheck } from 'react-icons/bs';
-import { HiOutlineBadgeCheck } from 'react-icons/hi';
-import { Accordions } from '../../model';
+// import { Facebook, Github, Instagram, Linkedin, Twitter } from "../_components";
 
-export const socialHandles = [
-   {id: 1, srOnly: 'LinkedIn', link: 'https://linkedin.com/in/goodnews-ike', icon: <FaLinkedin className="social__icon" />},
-   {id: 2, srOnly: 'Github', link: 'https://github/goodnewsike', icon: <FaGithub className="social__icon" />},
-   {id: 3, srOnly: 'Twitter', link: 'https://twitter/goodnews-ike', icon: <FaTwitterSquare className="social__icon" />},
-   {id: 4, srOnly: 'Instagram', link: 'https://github/_goodnewsike', icon: <FaInstagram className="social__icon" />},
-];
+// export const socialHandles = [
+//    {
+//       id: 1,
+//       ariaLabel: 'Go To Goodnews Ike LinkedIn Page',
+//       label: 'LinkedIn',
+//       title: 'LinkedIn Page',
+//       link: 'https://linkedin.com/in/goodnews-ike',
+//       icon: <Linkedin />,
+//    },
+//    {
+//       id: 2, 
+//       ariaLabel: 'Go To Goodnews Ike Github Page', 
+//       label: 'Github', 
+//       title: 'Github Page', 
+//       link: 'https://github.com/goodnewsike',
+//       icon: <Github />,
+//    },
+//    {
+//       id: 3, 
+//       ariaLabel: 'Go To Goodnews Ike Twitter Page', 
+//       label: 'Twitter', 
+//       title: 'Twitter Page', 
+//       link: 'https://twitter.com/goodnews-ike',
+//       icon: <Twitter />,
+//    },
+//    {
+//       id: 4, 
+//       ariaLabel: 'Go To Goodnews Ike Instagram Page', 
+//       label: 'Instagram', 
+//       title: 'Instagram Page', 
+//       link: 'https://instagram.com/_goodnewsike',
+//       icon: <Instagram />,
+//    },
+//    {
+//       id: 5, 
+//       ariaLabel: 'Go To Goodnews Ike Facebook Page', 
+//       label: 'Facebook', 
+//       title: 'Facebook Page', 
+//       link: 'https://facebook.com/Gudniuzplanet',
+//       icon: <Facebook />,
+//    },
+// ];
 
 export const menuDrop = [
-   { id: 1, label: 'home', active: 1, icon: <MdOutlineWorkOutline className="home__icon" />},
-   { id: 2, label: 'expertise', active: 2, icon: <MdOutlineWorkOutline className="home__icon" />},
-   { id: 3, label: 'work', active: 3, icon: <BsBagCheck className="home__icon" />},
-   { id: 4, label: 'experience', active: 4, icon: <HiOutlineBadgeCheck className="home__icon" />},
-   { id: 5, label: 'contact', active: 5, icon: <MdOutlineContactPage className="home__icon" />},
+   { id: 1, label: 'home', link: '/', active: 1},
+   { id: 2, label: 'about', link: '/about', active: 2},
+   { id: 3, label: 'projects', link: '/projects', active: 3},
+   { id: 4, label: 'resume', link: '/resume', active: 4},
+   { id: 5, label: 'contact', link: '/contact', active: 5},
 ];
 
 export const experiences = [

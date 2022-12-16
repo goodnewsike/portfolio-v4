@@ -23,7 +23,7 @@ const TextArea = withFormsy((props) => {
    return (
       <div className={classNames('text-area', props.className)}>
          <div className={classNames('inputWrapper', {focus: focused, filled: !!props.value})}>
-            <label htmlFor={props.name}>{props.label}</label>
+            {props.label && <label htmlFor={props.name}>{props.label}</label>}
             <textarea
                id={props.id}
                name={props.name}

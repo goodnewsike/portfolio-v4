@@ -1,3 +1,4 @@
+import { WithRouterProps } from 'next/dist/client/with-router';
 import {
    default as React,
    Dispatch,
@@ -8,14 +9,15 @@ import {
 
 export interface PageLayoutProps {
    open?: boolean;
-   className: string;
+   className?: string;
    children?: any;
    onClickAway?: any;
+   WithRouterProps?: WithRouterProps;
 }
 
 export interface NavMap {
    id: number;
-   srOnly: string;
+   ariaLabel: string;
    link: string;
    icon: JSX.Element;
 }
@@ -23,8 +25,9 @@ export interface NavMap {
 export interface MenuMap {
    id: number;
    label: string;
+   link: string;
    active: number;
-   icon: JSX.Element | string;
+   icon?: JSX.Element | string;
 }
 
 export interface ActiveSection {
@@ -64,4 +67,9 @@ export interface forAccordion {
    data: Accordions;
    activeState: string | number;
    setActiveState: Dispatch<SetStateAction<string | number>>;
+}
+
+export interface FooterProps {
+   label: string;
+   link: string;
 }

@@ -4,18 +4,10 @@ import React, { memo, useEffect } from 'react';
 const Hexagon = memo(() => {
    useEffect(() => {
       const cursor: HTMLElement = document.querySelector(".cursor")!;
-      const cursorChange: HTMLElement = document.querySelector(".mouse__handle")!;
       document.addEventListener('mousemove', (e) => {
          // cursor.style.top = `${e.pageY}px`;
          // cursor.style.setProperty('--top', `${e.pageY}px`);
          cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
-         // cursorChange.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
-      });
-      document.addEventListener('onclick', (e) => {
-         cursorChange.classList.add('expand');
-         setTimeout(() => {
-            cursorChange.classList.remove('expand');
-         }, 500);
       });
    }, []);
 

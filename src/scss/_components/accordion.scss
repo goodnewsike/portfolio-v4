@@ -1,14 +1,14 @@
 .__accordion {
-   width: 75%;
+   // width: 75%;
    margin: auto;
    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
    border-radius: 8px;
    overflow: hidden;
    height: 3.75rem;
    transition: height .5s;
-   @media screen and (max-width: 991px) {
-      width: 100%;
-   }
+   // @media screen and (max-width: 991px) {
+   //    width: 100%;
+   // }
    .accordion__header {
       border-radius: 8px;
       width: 100%;

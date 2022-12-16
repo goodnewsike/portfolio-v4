@@ -1,15 +1,22 @@
 import type { NextPage } from 'next';
 import React, { memo, useState } from 'react';
-import { Accordion, experiences, PageLayout, Title } from '../src/_components';
+import { Accordion, experiences, PageLayout } from '../src/_components';
+
+{/* <iframe
+            src={previewData}
+            allowFullScreen
+            width="740"
+            height="780"
+            title="Adenekan Wonderful Resumé"
+          /> */}
 
 // eslint-disable-next-line react/display-name
-const Experience: NextPage = memo(() => {
+const Resume: NextPage = memo(() => {
    const [activeState, setActiveState] = useState<string | number>(experiences[0]?.role);
 
    return (
-      <PageLayout className="experience position-relative">
+      <PageLayout className="resume position-relative">
          <div className="container p-0">
-            <Title title="Experience" />
             {experiences.map<JSX.Element>((item, i) => (
                <Accordion key={i} data={item} activeState={activeState} setActiveState={setActiveState} />
             ))}
@@ -18,4 +25,4 @@ const Experience: NextPage = memo(() => {
    );
 });
 
-export default Experience;
+export default Resume;

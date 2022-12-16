@@ -4,6 +4,8 @@
 
 @import '../src/scss/_components/pageLayout';
 @import '../src/scss/_components/navbar';
+@import '../src/scss/_components/footer';
+@import '../src/scss/_components/skipToContent';
 @import '../src/scss/_components/hexagon';
 @import '../src/scss/_components/modal';
 @import '../src/scss/_components/title';
@@ -11,6 +13,6 @@
 
 @import '../src/scss/_pages/hero';
 @import '../src/scss/_pages/about';
-@import '../src/scss/_pages/work';
-@import '../src/scss/_pages/experience';
+@import '../src/scss/_pages/projects';
+@import '../src/scss/_pages/resume';
 @import '../src/scss/_pages/contact';
